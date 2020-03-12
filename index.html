@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vòng lặp lồng nhau</title>
+</head>
+<body>
+<table border="1" style="border-collapse: collapse; width: 500px">
+    <tr id="l1"></tr>
+    <tr id="l2"></tr>
+    <tr id="l3"></tr>
+    <tr id="l4"></tr>
+    <tr id="l5"></tr>
+    <tr id="l6"></tr>
+    <tr id="l7"></tr>
+    <tr id="l8"></tr>
+    <tr id="l9"></tr>
+    <tr id="l10"></tr>
+</table>
+<script>
+    let i;
+    let j;
+    for (i=1;1<=10;i++){
+        for (j=1;j<=10;j++){
+            document.getElementById("l" + i).innerHTML += "<td>"+i*j+"</td>";
+        }
+    }
+</script>
+</body>
+</html>
